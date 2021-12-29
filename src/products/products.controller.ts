@@ -14,7 +14,7 @@ import { ProductsService } from './products.service';
 // filter for requests starting with /products
 @Controller('products')
 export class ProductsController {
-  // this is same as this.productsService = productsService
+  // this is same as this.productsService = productsService (wer are basically creating an object of productService, which is basically a class that provides service functions like delete etc)
   constructor(private readonly productsService: ProductsService) {}
   @Post()
   addProduct(
